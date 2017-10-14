@@ -12,3 +12,10 @@ This sandbox_app serves as a workbench form which to build functionality, before
 
 * Working user login
     $ Good to write methods, that are used in the controllers, in the controller.
+* Build logout, then a little bootstrap and css to make user interface better.  
+* WHEN USING CONTROLLER HELPER, INCLUDE 'include {TYPE OF CONTROLLER}Helper'
+IN APPLICATION_CONTROLLER
+
+* Did basic bootstrap nav-bar layout.
+* Define current_user, logged_in?
+* Create partial to handle nav-bar if-statement
