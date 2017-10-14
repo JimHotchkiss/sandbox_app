@@ -7,4 +7,7 @@ This sandbox_app serves as a workbench form which to build functionality, before
   ~ I made a form using form_for
   ~ I created strong params, user_params
   ~ I am also going to implement validation errors, using fields_with_erros class.
-  
+    $ Also, I'm going to put the user form into a partial.  
+* So, I've the functionality working, with errors and partials, the styling leaves a little to be desired.  I'll come back to that
+
+* Make static landing page.  
