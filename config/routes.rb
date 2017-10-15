@@ -10,9 +10,9 @@ Rails.application.routes.draw do
   post   'login',   to: 'sessions#create'
   get    'logout',  to: 'sessions#destroy'
 
-  resoures :recipes, only: [:show, :index] do
+  resources :recipes, only: [:show, :index] do
     resources :ingredients, only: [:show, :index, :new]
-  end 
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

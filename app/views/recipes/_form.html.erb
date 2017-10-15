@@ -1,0 +1,7 @@
+<%= f.label "Title" %>
+<%= f.text_field :title%><br></br>
+<%= f.label "Description" %>
+<%= f.text_area :description %><br></br>
+<%= f.label "Ingredients" %>:
+<%= f.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %><br></br>
+<%= f.submit "Create Recipe" %>

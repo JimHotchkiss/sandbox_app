@@ -33,3 +33,4 @@ So, as of now, the user can select search by ingredients, add ingredient(s) and 
   * Perhaps, I could make a rating. This would produce a single tier nesting.
 
 But first I need to build ingredients_attributes= method to accept a user's unique ingredient.  
+  * Going to seed ingredient, so I can see if ingredient_ids checkbox is working

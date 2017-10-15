@@ -2,6 +2,9 @@ class Recipe < ApplicationRecord
   has_many :recipe_ingredients
   has_many :ingredients, through: :recipe_ingredients
 
+  validates :title, presence: true
+  validates :description, presence: true
+
   def ingredients_attributes=(ingredient_attributes)
     ingredient_attributes.values.each do |ingredient_attribute|
       if !ingredient_attribute[:name].blank?
