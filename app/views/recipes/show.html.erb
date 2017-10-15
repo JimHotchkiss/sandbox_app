@@ -1,2 +1,7 @@
-<p>Recipe Show Page</p>
-<%= @recipe.title %>
+<div style="background-color:lightgray;" class="container">
+  <p style="color:red">Title:</p>
+    <p><%= @recipe.title %></p><br>
+  <p style="color:red">Description:</p>
+    <p><%= @recipe.description %><p>
+</div><br></br>
+<%= render 'recipes/comments' %>

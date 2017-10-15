@@ -35,4 +35,5 @@ So, as of now, the user can select search by ingredients, add ingredient(s) and 
 But first I need to build ingredients_attributes= method to accept a user's unique ingredient.  
   * Going to seed ingredient, so I can see if ingredient_ids checkbox is working
 Now I'm going to add the nested ingredient param
-  * 
+  * Okay, I've got the basic structure, search by ingredients and recipes, working.
+Now, want to add comments
