@@ -28,3 +28,8 @@ I've got recipe, ingredient and recipe_ingredients migrations and wired up in th
   * Need to do the nested routes
   * Need to build strong_params
 Also, I want to figure out how to include a recipe_ingredient's quantity.  
+  * It feels like that if I add quantity, I will end up with a nested/nested/nested situation.
+So, as of now, the user can select search by ingredients, add ingredient(s) and read a description of the recipe.  
+  * Perhaps, I could make a rating. This would produce a single tier nesting.
+
+But first I need to build ingredients_attributes= method to accept a user's unique ingredient.  
