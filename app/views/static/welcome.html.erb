@@ -1,5 +1,24 @@
+<%= render 'static/greeting' %>
+
 <% if logged_in? %>
-  <p>Welcome, <%= current_user.username %>, <%= flash[:message]%> to the SandBox!</p>
+  <%= render 'static/links' %>
 <% else %>
-  <p>Welcome <%= flash[:message]%> to the SandBox!</p>
+
+  <div class="container">
+    <p>______________________________________________________________________________________________________________________________________________________________</p>
+
+    <p style="color:red">Search by ingredients:</p>
+      <% @ingredients.each do |ingredient|  %>
+        | <%= ingredient.name %>
+      <% end %>
+  </div>
+
+  <div class="container">
+    <p>______________________________________________________________________________________________________________________________________________________________</p>
+
+    <p style="color:red">Recipes:</p>
+      <% @recipes.each do |recipe|  %>
+        | <%= recipe.title %>
+      <% end %>
+  </div>
 <% end %>
