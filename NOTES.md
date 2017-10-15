@@ -19,3 +19,12 @@ IN APPLICATION_CONTROLLER
 * Did basic bootstrap nav-bar layout.
 * Define current_user, logged_in?
 * Create partial to handle nav-bar if-statement
+
+Now, going to work on the relationship  between recipe and ingredient. A recipe has_many ingredients, and a ingredient has_many recipes.
+  * There will be a recipe_ingredients join table
+  * I also want there to be a quantity attribute.
+    ~ I think this will belong_to recipe_ingredient
+I've got recipe, ingredient and recipe_ingredients migrations and wired up in the models.
+  * Need to do the nested routes
+  * Need to build strong_params
+Also, I want to figure out how to include a recipe_ingredient's quantity.  
